@@ -29,10 +29,11 @@ namespace MyCourse
             }
             app.UseStaticFiles();
             
-            //app.UseMvcWithDefaultRoute();
             app.UseMvc(routeBuilder =>
+            //può contenere più rotte semplicemente usa il primo conforme che trova 
             {
                 routeBuilder.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
+                //per eempio .../courses/detail/69
             });
         }
     }
