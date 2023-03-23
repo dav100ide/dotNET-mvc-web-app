@@ -1,13 +1,23 @@
-
-<h1>index courses</h1>
-<h3>lista corsi con ciclco for brutto</h3>
-<ul>
-   @for (int i = 0; i < 4; i++)
-   {
-      <li>
-         <a href="/Courses/Detail/@i">
-            corso @i
-         </a>
-      </li>
-   }
-</ul>
+<section class="container">
+   <h1 class="mb-4">Ecco i nostri corsi</h1>
+   <div class="container-fluid">
+      <div class="row g-3">
+         @for (int i = 0; i < 10; i++)
+         {
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+         
+            <div class="card h-100">
+               <img class="card-img-top" src="https://via.placeholder.com/300x300?text=Placeholder+Image" alt="Card image cap">
+                  <div class="card-header">
+                     <h3 class="card-title">Card title</h3>
+                  </div>
+               <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-outline-primary">Dettaglio corso</a>
+               </div>
+            </div>
+         </div>
+         }
+      </div>
+   </div>
+</section>
