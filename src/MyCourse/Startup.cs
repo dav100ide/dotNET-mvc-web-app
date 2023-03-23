@@ -33,7 +33,7 @@ namespace MyCourse
             //può contenere più rotte semplicemente usa il primo conforme che trova 
             {
                 routeBuilder.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
-                //per eempio .../courses/detail/69
+                //per esempio /courses/detail/69 oppure in caso di default: Home/Index/id(opzionale)
             });
         }
     }
