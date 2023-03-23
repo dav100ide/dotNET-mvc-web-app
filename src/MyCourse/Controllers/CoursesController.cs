@@ -10,12 +10,15 @@ namespace MyCourse.Controllers
     {
         public IActionResult index()
         {
-            return Content("sono index");
+            /*se non specifico il nome,
+            View() ritorna index pk è il nome del metodo*/
+            return View();
+
         }
 
         public IActionResult Detail(string id)
         {
-            return Content($"sono detail il mio id è {id}");
+           return View();
         }
 
         public IActionResult Search(string title)
