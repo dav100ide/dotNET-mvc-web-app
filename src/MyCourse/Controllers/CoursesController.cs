@@ -17,5 +17,10 @@ namespace MyCourse.Controllers
         {
             return Content($"sono detail il mio id è {id}");
         }
+
+        public IActionResult Search(string title)
+        {
+            return Content($"hai cercato {title}");
+        }
     }
 }

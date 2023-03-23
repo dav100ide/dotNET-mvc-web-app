@@ -32,8 +32,11 @@ namespace MyCourse
             app.UseMvc(routeBuilder =>
             //può contenere più rotte semplicemente usa il primo conforme che trova 
             {
-                routeBuilder.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
                 //per esempio /courses/detail/69 oppure in caso di default: Home/Index/id(opzionale)
+                routeBuilder.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
+
+                routeBuilder.MapRoute("search","{controller}/{action=Search}/{title}");
+
             });
         }
     }
