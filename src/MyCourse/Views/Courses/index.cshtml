@@ -1,6 +1,7 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
 
 <h1>index courses</h1>
-<h3>lista corsi con ciclco for brutto</h3>
+<h3>lista corsi con ciclo for brutto</h3>
 <ul>
    @for (int i = 0; i < 4; i++)
    {
@@ -8,6 +9,8 @@
          <a href="/Courses/Detail/@i">
             corso @i
          </a>
+        
       </li>
    }
+   <a asp-action="Index" asp-controller="Home">asp tag a: home</a>
 </ul>
